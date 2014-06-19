@@ -1,0 +1,32 @@
+<h1>CONTACTS</h1>
+ 
+<table>
+  <tr>
+    <th>FirstName &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
+    <th>LastName&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
+   <th>MobileNumber&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
+    <th>Email_id&nbsp &nbsp&nbsp &nbsp</th>
+   <th>Address</th>
+   
+  </tr>
+ 
+  <% @contact.each do |contact| %>
+    <tr>
+      <td><%= contact.firstname %></td>
+      <td><%= contact.lastname %></td>
+	<td><%= contact.mno %></td>
+      <td><%= contact.emailid %></td>
+       <td><%= contact.add %></td>
+	<td><%= link_to 'Show', contact_path(contact) %>&nbsp &nbsp&nbsp &nbsp</td>
+    <td><%= link_to 'Edit', edit_contact_path(contact) %>&nbsp &nbsp</td>
+    <td><%= link_to 'Destroy', contact_path(contact),
+                    method: :delete %></td>
+
+<a href=http://localhost:3000/contacts/new>Create New</a>
+
+    </tr>
+  <% end %>
+
+</table>
+
+
