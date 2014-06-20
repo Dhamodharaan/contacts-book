@@ -22,6 +22,10 @@
   <strong>Text:</strong>
   <%= @contact.add %>
 </p>
+<p>
+<img src="/data/<%=@contact.photo %>" width="50" height="40"/>
+</p>
 
 <%= link_to 'Back', contacts_path %>
  <%= link_to 'Edit', edit_contact_path(@contact) %>
+

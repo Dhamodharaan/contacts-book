@@ -6,7 +6,8 @@
     <th>LastName&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
    <th>MobileNumber&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp</th>
     <th>Email_id&nbsp &nbsp&nbsp &nbsp</th>
-   <th>Address</th>
+   <th>Address&nbsp&nbsp</th>
+   <th>Photo</th>
    
   </tr>
  
@@ -17,16 +18,18 @@
 	<td><%= contact.mno %></td>
       <td><%= contact.emailid %></td>
        <td><%= contact.add %></td>
-	<td><%= link_to 'Show', contact_path(contact) %>&nbsp &nbsp&nbsp &nbsp</td>
+       <td><%= contact.photo %>&nbsp&nbsp</td>
+       
+	<td><%= link_to 'Show', contact_path(contact) %>&nbsp&nbsp&nbsp &nbsp</td>
     <td><%= link_to 'Edit', edit_contact_path(contact) %>&nbsp &nbsp</td>
     <td><%= link_to 'Destroy', contact_path(contact),
                     method: :delete %></td>
 
-<a href=http://localhost:3000/contacts/new>Create New</a>
+     
 
     </tr>
   <% end %>
-
+<a href=http://localhost:3000/contacts/new>Create New</a>
 </table>
 
 

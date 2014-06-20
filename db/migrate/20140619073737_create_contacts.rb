@@ -6,7 +6,8 @@ class CreateContacts < ActiveRecord::Migration
       t.string :mno
       t.string :emailid
       t.string :add
-
+      t.string :photo
+      
       t.timestamps
     end
   end

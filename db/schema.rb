@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20140619073737) do
     t.string   "add"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.binary   "avatar",                 null: false
+    t.string   "photo",      limit: 200
   end
 
 end
